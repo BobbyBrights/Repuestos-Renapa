@@ -1,0 +1,10 @@
+@import "../vars";
+@import "../mixins";
+.list-container {
+	margin-top: 30px;
+}
+@include media(sm){
+	.list-container{
+		margin-top: 100px;
+	}
+}

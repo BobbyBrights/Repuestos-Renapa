@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>Repuestos Renaa</title>
+  <title>Repuestos Renapa</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -15,7 +15,8 @@
   <link rel="stylesheet" href="css/vendor/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="css/vendor/slick/slick.css"/>
   <link rel="stylesheet" href="css/styles.css">
-  <link rel="stylesheet" href="css/sections/main-styles.css">
+  <link rel="stylesheet" href="css/sections/form.css">
+  <link rel="stylesheet" href="css/sections/list.css">
   <!--endbuild-->
 </head>
 
@@ -27,13 +28,25 @@
          
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
            <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
-        </button> <a class="navbar-brand" href="#">Brand</a>
+        </button> <a class="navbar-brand" href="#"><img src="images/logo.png"></a>
       </div>
       
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav navbar-right">
           <li>
-            <a href="#">Link</a>
+            <a href="#">INICIO</a>
+          </li>
+          <li>
+            <a href="#">ITEM 2</a>
+          </li>
+          <li>
+            <a href="#">ITEM 3</a>
+          </li>
+          <li>
+            <a href="#">ITEM 4</a>
+          </li>
+          <li>
+            <a href="#">ITEM 5</a>
           </li>
         </ul>
       </div>
@@ -43,17 +56,65 @@
   <!--Form container-->
   <div class="form-container">
     <div class="container">
-      <form role="form" class="form-inline">
-        <div class="form-group">
-           
-          <label for="exampleInputEmail1">
-            Email address
-          </label>
-          <input class="form-control" id="exampleInputEmail1" type="email" />
+      <form role="form" >
+        <div class="row">
+          <div class="form-group col-xs-12 col-sm-3">           
+            <label for="input1">
+              Select 1
+            </label>
+            <select class="form-control">
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+            </select>
+          </div>
+
+          <div class="form-group col-xs-12 col-sm-3">             
+            <label for="input2">
+              Select 2
+            </label>
+            <select class="form-control border-radius">
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+            </select>
+          </div>
+
+          <div class="form-group col-xs-12 col-sm-3">             
+            <label for="input3">
+              Select 3
+            </label>
+            <select class="form-control">
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+            </select>
+          </div>
+
+          <div class="form-group col-xs-12 col-sm-3">             
+            <label for="input4">
+              Select 4
+            </label>
+            <select class="form-control">
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+            </select>
+          </div>
         </div>
-        <button type="submit" class="btn btn-default">
-          Submit
-        </button>
+        <div class="button-container">
+          <button type="submit" class="btn btn-default">
+            Submit
+          </button>
+        </div>
       </form>
     </div>
   </div>

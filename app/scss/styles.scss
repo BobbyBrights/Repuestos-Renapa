@@ -1,0 +1,15 @@
+@import "vars";
+@import "mixins";
+@import "fonts";
+
+body {
+	font-family:'Graphik';
+}
+.section-padding {
+	padding: 0 10px;
+}
+@include media(sm){
+	.section-padding {
+		padding: 0 50px;
+	}
+}

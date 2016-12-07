@@ -22,6 +22,64 @@ body {
 .navbar-toggle {
 	margin-top: 27px;
 }
+
+//Buttons
+.btn {
+	&.fill-to-right {
+		display: inline-block;
+	    vertical-align: middle;
+	    -webkit-transform: perspective(1px) translateZ(0);
+	    transform: perspective(1px) translateZ(0);
+	    position: relative;
+	    -webkit-transition-property: color;
+	    transition-property: color;
+	    -webkit-transition-duration: 0.3s;
+	    transition-duration: 0.3s;
+
+	    margin: 0;
+	    padding: 15px 30px;
+	    cursor: pointer;
+	    background: #e1e1e1;
+	    text-decoration: none;
+	    color: #000;
+	    -webkit-tap-highlight-color: rgba(0,0,0,0);
+	    -webkit-font-smoothing: antialiased;
+	    border-radius: 0;
+	    font-size: 18px;
+
+	    &:before {
+	    	content: "";
+		    position: absolute;
+		    z-index: -1;
+		    top: 0;
+		    left: 0;
+		    right: 0;
+		    bottom: 0;
+		    background: #2098D1;
+		    -webkit-transform: scaleX(0);
+		    transform: scaleX(0);
+		    -webkit-transform-origin: 0 50%;
+		    transform-origin: 0 50%;
+		    -webkit-transition-property: transform;
+		    transition-property: transform;
+		    -webkit-transition-duration: 0.3s;
+		    transition-duration: 0.3s;
+		    -webkit-transition-timing-function: ease-out;
+		    transition-timing-function: ease-out;
+	    }
+
+	    &:hover {
+	    	color: $white;
+	    	&:before {
+	    		-webkit-transform: scaleX(1);
+    			transform: scaleX(1);
+	    	}
+	    }
+	}
+}
+
+
+
 @include media(sm){
 	.navbar-right {
 		margin-top: 27px;

@@ -1,0 +1,24 @@
+@import "../vars";
+@import "../mixins";
+.specifications{
+	margin-top: 30px;
+
+	.table-title {
+		padding: 5px 15px;
+		color: $main-color;
+		font-weight: 600;
+		font-size: 25px;
+	}
+	thead {
+		background-color: $gray;
+	}
+}
+@include media(sm){
+	.specifications{
+		margin-top: 100px;
+		.table-title {
+			border: 1px solid $gray;
+			border-bottom: none;
+		}
+	}
+}
